@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="referrer" content="no-referrer" />
+    <title>哈吉米网页</title>
+    <style>
+        /* 全局样式 */
+        body {
+            background-color: #fffaf0; /* 米白色背景板 */
+            font-family: "Microsoft Yahei", sans-serif;
+            margin: 0;
+            padding: 40px;
+        }
+
+        /* 菜单盒子：肉色目录区域 */
+        .menu-box {
+            background-color: #f8e9dd; /* 肉色 */
+            max-width: 700px;
+            margin: 0 auto; /* 居中 */
+            padding: 30px;
+            border-radius: 16px; /* 圆角，柔和一点 */
+        }
+
+        /* 标题图片容器 - 圆形头像 */
+        .title-img {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .title-img img {
+            max-width: 50%;
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #fff;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        /* 目录列表 */
+        .menu-list {
+            list-style: none; /* 去掉默认圆点 */
+            padding: 0;
+        }
+        /* 直接把a标签作为整块可点击区域，不再是li里面的小链接 */
+        .menu-list a {
+            display:block;
+            padding: 14px 20px;
+            margin: 10px 0;
+            background-color: #fff6ee;
+            border-radius: 10px;
+            font-size: 18px;
+            color: #6b4b37;
+            text-decoration: none; /* 去掉链接下划线 */
+        }
+        /* 鼠标悬浮变色效果 */
+        .menu-list a:hover{
+            background-color: #f9e2d0;
+        }
+    </style>
+</head>
+<body>
+    <div class="menu-box">
+        <!-- 标题图片区域 -->
+        <div class="title-img">
+            <img src="https://i.eunie.online/cat/hajimi/80acbfed-ad9f-4327-8adc-66fff69dbe4f_e7fe6489-1e91-46ba-94b2-40136d6f8de9.png" alt="耄耋" />
+        </div>
+
+        <!-- 目录菜单：全部替换为a链接，整块区域都可以点击 -->
+        <div class="menu-list">
+    <a href="jieshao.html">👉 哈吉米介绍</a>
+    <a href="tupian.html">👉 哈吉米图片集</a>
+    <a href="shipin.html">👉 哈吉米视频</a>
+    <a href="guanyu.html">👉 关于哈吉米</a>
+</div>
+    </div>
+</body>
+</html>
